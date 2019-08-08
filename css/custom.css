@@ -1,8 +1,3 @@
-/* Custom styles */
-/*
-DePaul IHS
-*/
-
 @font-face {
     font-family: 'GibsonSemiBold';
     src: url('/css/fonts/gibson-semibold-webfont.eot');
@@ -55,8 +50,8 @@ DePaul IHS
     font-style: normal;
 }
 
-    
-body { 
+
+body {
   font: 18px/1.3em 'ColaborateThinRegular', sans-serif;
 }
 
