@@ -16,3 +16,7 @@ th[aria-label='Tix: activate to sort column ascending'] select,
 th[aria-label='Image: activate to sort column ascending'] select {
 	display: none;
 }
+
+td:nth-of-type(6) {
+    width: 10%;
+}
