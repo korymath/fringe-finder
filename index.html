@@ -47,7 +47,7 @@
 
 <div id="table-container"><div id="table-container-table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 
-  <button id="clr_btn">Clear all active filters.</button>
+  <!-- <button id="clr_btn">Clear all active filters.</button> -->
 
 <div class="row">
   <div class="col-sm-12">
@@ -76,8 +76,10 @@
 
       $(document).ready( function () {
         $("#clr_btn").click(function(){
-          // $("select").val('').change();
+          // $("select").selectOptions("");
           console.log("Flters clear");
+          $('.dataTables_filter label input').val('');
+          $('#table-container-table').DataTable().search('').draw();
         });
 
         var table = $('#table-container-table').DataTable( {
