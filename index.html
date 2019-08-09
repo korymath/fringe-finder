@@ -17,9 +17,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.csv.min.js"></script>
     <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.fixedHeader.min.js"></script>
     <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
     <script type="text/javascript" src="js/csv_to_html_table.js"></script>
-    <script></script>
   </head>
 
   <body>
@@ -89,11 +89,30 @@
         datatables_options: {
           paging: true,
           responsive: true,
+          orderCellsTop: true,
+          fixedHeader: true,
           columnDefs: [
             { "visible": false, "targets": [8, 9] }
           ]
         }
-      });
+      })
+
+      setTimeout(function(){
+        console.log('checking in');
+        $('#table-container-table thead tr').clone(true).appendTo( '#table-container-table thead' );
+        $('#table-container-table thead tr:eq(1) th').each( function (i) {
+            var title = $(this).text();
+            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+            $( 'input', this ).on( 'keyup change', function () {
+                if ( table.column(i).search() !== this.value ) {
+                    table
+                        .column(i)
+                        .search( this.value )
+                        .draw();
+                }
+            } );
+        } );
+      }, 3000);
     </script>
   </body>
 </html>
