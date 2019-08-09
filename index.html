@@ -39,11 +39,11 @@
 
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6"?>
+          <div class="col-sm-6"?>
             <h1>2019 Edmonton Fringe Show Filters</h1>
             <p>Use the drop-downs to filter columns. Or, search by keywords across all fields.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <a href="http://bit.ly/tedxrft">
               <img src="images/tedxrft.png" alt="placeholder 960" class="img-responsive" />
             </a>
@@ -94,6 +94,10 @@
         });
 
         var table = $('#table-container-table').DataTable( {
+          columnDefs: [
+            { responsivePriority: 1, targets: [1, 2, 3, 5] },
+            { responsivePriority: 2, targets: -1 }
+          ],
           "orderCellsTop": true,
           "fixedHeader": true,
           "responsive": true,
