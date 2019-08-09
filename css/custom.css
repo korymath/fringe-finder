@@ -7,3 +7,7 @@ td:nth-of-type(4) {
 	border-top: 5px black solid;
 	padding-top: 20px;
 }
+
+.sel-drop {
+	width: 100%;
+}
