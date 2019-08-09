@@ -369,9 +369,3 @@ div.DTFC_RightBodyWrapper table.dataTable thead .sorting_desc:after {
 div.FixedHeader_Cloned table {
 	margin: 0 !important
 }
-
-#table-container {
-	margin-top: 20px;
-	border-top: 5px black solid;
-	padding-top: 20px;
-}
