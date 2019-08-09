@@ -94,21 +94,10 @@
         });
 
         var table = $('#table-container-table').DataTable( {
-          // "columns": [
-          //   { "width": "5%" },
-          //   { "width": "5%" },
-          //   { "width": "5%" },
-          //   { "width": "10%" },
-          //   { "width": "10%" },
-          //   { "width": "10%" },
-          //   { "width": "5%" },
-          //   { "width": "5%" },
-          //   { "width": "5%" },
-          // ],
           "orderCellsTop": true,
           "fixedHeader": true,
           "responsive": true,
-          "ordering": false,
+          "ordering": true,
           "colReorder": true,
           "paging": true,
           initComplete: function () {
@@ -129,7 +118,7 @@
                     select.append( '<option value="'+d+'">'+d+'</option>' )
                 } );
             } );
-        }
+          }
         });
       });
     </script>
