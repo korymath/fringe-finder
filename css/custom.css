@@ -1,3 +1,37 @@
+.fullHeight {
+	height: 100%;
+}
+
+.noPaddingRight {
+	padding-right: 0;
+}
+
+.block {
+	display: block;
+}
+
+.headerSection {
+	height: 300px;
+}
+
+.innerContainer {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	position: relative;
+}
+
+.red {
+	background: #f03130;
+}
+
+.rightAligned {
+	text-align: right;
+}
+
+.zeroMarginTop {
+	margin-top: 0 !important;
+}
+
 td:nth-of-type(4) {
   font-weight: bold;
 }
