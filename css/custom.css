@@ -37,20 +37,20 @@ td:nth-of-type(4) {
 }
 
 #table-container {
-    margin-top: 20px;
-    border-top: 5px black solid;
-    padding-top: 20px;
+  margin-top: 20px;
+  border-top: 5px black solid;
+  padding-top: 20px;
 }
 
 .sel-drop {
-    width: 100%;
+  width: 100%;
 }
 
 th[aria-label='Tix: activate to sort column ascending'] select,
 th[aria-label='Image: activate to sort column ascending'] select {
-    display: none;
+  display: none;
 }
 
 td:nth-of-type(6) {
-    width: 10%;
+  width: 10%;
 }
