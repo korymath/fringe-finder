@@ -51,7 +51,10 @@ td:nth-of-type(4) {
 }
 
 th[aria-label='Tix: activate to sort column ascending'] select,
-th[aria-label='Image: activate to sort column ascending'] select {
+th[aria-label='Image: activate to sort column ascending'] select,
+th[aria-label='Tix: activate to sort column ascending'] .sorting:after,
+th[aria-label='Image: activate to sort column ascending'] .sorting:after {
+
   display: none;
 }
 
