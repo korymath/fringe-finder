@@ -1,4 +1,4 @@
-.fullHeight {
+/* .fullHeight {
   height: 100%;
 }
 
@@ -30,6 +30,10 @@
 
 .zeroMarginTop {
   margin-top: 0 !important;
+} */
+
+#table-container-table_wrapper {
+  padding-top: 20px;
 }
 
 td:nth-of-type(4) {
