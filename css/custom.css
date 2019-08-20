@@ -37,7 +37,7 @@
   padding-top: 20px;
 }
 
-td:nth-of-type(4) {
+td:nth-of-type(2) {
   font-weight: bold;
 }
 
@@ -61,4 +61,8 @@ th[aria-label='Image: activate to sort column ascending'] .sorting:after {
 
 td:nth-of-type(6) {
   width: 10%;
+}
+
+#table-container-table{
+  border: none;
 }
